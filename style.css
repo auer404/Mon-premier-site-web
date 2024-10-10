@@ -1,0 +1,148 @@
+/*
+
+MEMO - Palette (https://coolors.co/bfb5af-ece2d0-d5b9b2-a26769-582c4d) :
+
+Silver #BFB5AF
+Bone #ECE2D0
+Pale dogwood #D5B9B2
+Rose taupe #A26769
+Violet #582C4D
+
+*/
+
+body {
+    margin:0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-color:#ECE2D0;
+    color:#A26769;
+    font-size:18px;
+}
+
+header {
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:100px;
+    padding-bottom:100px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:center;
+
+    background-color:#582C4D;
+
+    background-image:url(images/image-code.jpg);
+    background-size:cover;
+    background-position:center;
+
+    background-blend-mode:darken;
+
+    text-transform:uppercase;
+}
+
+header nav {
+    width:100%;
+}
+
+h1 {
+    margin-top:0;
+    color:#ECE2D0;
+
+    font-size:9vw;
+    font-weight: 100;
+
+    letter-spacing:2px;
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
+}
+
+nav a {
+    color:#ECE2D0;
+    font-size:20px;
+    text-decoration:none;
+    letter-spacing:0.75px;
+}
+
+nav a:not(.actuel):hover {
+    color:#A26769;
+    font-weight:500;
+}
+
+nav a.actuel {
+    opacity:0.5;
+    font-weight:500;
+    font-size:25px;
+}
+
+section {
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:100px;
+    padding-bottom:100px;
+    border-bottom:1px dotted #A26769;
+}
+
+.centrage {
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.couleurs-alt {
+    color:#ECE2D0;
+    background-color:#A26769;
+}
+
+.couleurs-alt h2 {
+    color:#BFB5AF;
+}
+
+section a {
+    color:#BFB5AF;
+    font-weight:400;
+}
+
+h2 {
+    font-weight:300;
+    font-size:40px;
+    color:#582C4D;
+    margin-top:0;
+}
+
+footer {
+    background-color:#582C4D;
+    font-size:12px;
+    color:#ECE2D0;
+    padding:40px;
+}
+
+/*******/
+
+ul.big {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.big li{
+    font-size:22px;
+}
+
+.big li:hover {
+    color:#BFB5AF;
+    padding-left:10px;
+}
+
+.big a {
+    color:inherit;
+}
+

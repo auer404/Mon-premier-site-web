@@ -1,32 +1,97 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon premier site web</title>
-    <link rel="stylesheet" href="mise-en-page.css">
+    <title>(Re)découverte de HTML et CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
 
-    <h1 class="rouge">Ma première page HTML</h1>
+    <header>
+        <h1>(Re)découverte :<br>HTML et CSS</h1>
+        <nav>
+            <ul>
+                <li><a class="actuel" href="#">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>A consulter : <a href="https://www.auer404.com/cours/">auer404.com/cours</a></p>
+    <main>
 
-    <img src="image-code.jpg" alt="Des balises HTML">
+        <section>
 
-    <p id="chapeau">Ceci est une page HTML. On a vu qu'en utilisant le bon format de fichier et en mettant en place un <span class="rouge">système de balises</span>, on peut obtenir un résultat visuel en ouvrant cette page dans un navigateur.</p>
+            <div class="centrage">
 
-    <p><button>Ceci est un bouton</button></p>
-    
-    <p>Observons maintenant le <span class="vert">comportement</span> du texte par défaut sur une telle page...</p>
+                <h2>Changement de mise en page !</h2>
 
-    <p>Si on ne précise pas, à nouveau via <span class="rouge">des balises</span>, quelle portion de texte est le titre, laquelle est un paragraphe, etc, il n'y aura <span class="vert">aucune mise en forme</span> et on perd même nos retours à la ligne !</p>
+                <p>Eh oui, on constate maintenant un semblant de thème visuel, avec notamment une palette de couleurs
+                    élégante, générée par <a href="https://coolors.co" target="_blank"
+                        title="Coolors - un générateur de palettes de couleurs bien pratique">coolors.co</a>, et la
+                    police "Roboto" servie par <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.</p>
 
-    <p><strong>Les balises ont en fait une double utilité : mise en forme visuelle et bonne structuration du contenu.</strong> On garde à l'esprit qu'une page web doit être lisible non seulement par des visiteurs humains, mais aussi par des "machines" : robots d'indexation, dispositifs à destination des mal/non-voyants, etc.</p>
+                <p>Il y a bien sûr eu quelques modifications aussi dans <a href="style.css" target="_blank">ma feuille
+                        CSS</a>, n'hésitez pas à aller y jeter un coup d'oeil. La page présente maintenant plusieurs sections, et les contenus texte sont gérés de manière à posséder une largeur maximale tout en restant centrés lorsque la fenêtre est plus large qu'eux.</p>
 
-    <a target="_blank" href="https://www.google.com">Un lien</a>
+            </div>
 
-    
+        </section>
+
+        <section>
+
+            <div class="centrage">
+
+                <h2>Autre titre</h2>
+
+                <p>Et ici nous sommes dans une nouvelle <strong>section</strong> de la page.</p>
+
+            </div>
+
+        </section>
+
+        <section class="couleurs-alt">
+
+            <div class="centrage">
+                <h2>Encore un autre titre</h2>
+
+                <p>Cette section de classe "couleurs-alt" possède... des couleurs alternatives. Ce qui n'est pas mal
+                    pour donner un peu de rythme.</p>
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="centrage">
+
+                <h2>Un dernier titre</h2>
+
+                <p>Et une section "normale" pour faire bonne mesure.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+            <p>Ceci est un pied de page</p>
+
+    </footer>
+
 </body>
+
 </html>
