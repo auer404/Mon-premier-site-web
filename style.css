@@ -133,16 +133,16 @@ ul.big {
     gap:10px;
 }
 
-.big li{
+ul.big li{
     font-size:22px;
 }
 
-.big li:hover {
+ul.big li:hover {
     color:#BFB5AF;
     padding-left:10px;
 }
 
-.big a {
+ul.big a {
     color:inherit;
 }
 
