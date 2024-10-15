@@ -16,8 +16,8 @@ body {
     margin:0; /* Remise à zero des marges données par le navigateur (utile pour obtenir une réelle pleine largeur, comme ici le header qui pourra être collé aux bords de la fenêtre */
     font-family: "Roboto", sans-serif; /* Possible grâce aux liens vers Google Fonts */
     font-weight: 300;
-    background-color:var(--couleur2);
-    color:var(--couleur4);
+    background-color:#ECE2D0;
+    color:#A26769;
     font-size:18px;
 }
 
@@ -32,7 +32,7 @@ header {
     justify-content:flex-end; /* Sur l'axe principal on accumule tout à la fin (donc en bas) */
     align-items:center; /* Sur l'axe secondaire on centre tout */
 
-    background-color:var(--couleur5);
+    background-color:#582C4D;
 
     background-image:url(images/image-code.jpg);
     background-size:cover; /* L'image de fond couvrira en une fois tout le header (au lieu de devoir se répéter si plus petite) et sa taille d'affichage sera ajustée au mieux (au lieu de trop être tronquée si plus grande)*/
@@ -49,7 +49,7 @@ header nav { /* Tout élément nav se trouvant dans un élément header */
 
 h1 {
     margin-top:0;
-    color:var(--couleur2);
+    color:#ECE2D0;
 
     font-size:9vw;
     font-weight: 100;
@@ -67,7 +67,7 @@ nav ul {
 }
 
 nav a {
-    color:var(--couleur2);
+    color:#ECE2D0;
     font-size:20px;
     text-decoration:none;
     letter-spacing:0.75px;
@@ -79,7 +79,7 @@ nav a:not(.actuel):hover {
 - :not(.actuel) : mais à condition que cet élément a ne porte pas la classe "actuel"
 - :hover : et à n'appliquer que lorsque cet élément a est survolé par la souris
 */
-    color:var(--couleur4);
+    color:#A26769;
     font-weight:500;
 }
 
@@ -94,7 +94,7 @@ section {
     padding-right:40px;
     padding-top:100px;
     padding-bottom:100px;
-    border-bottom:1px dotted var(--couleur4);
+    border-bottom:1px dotted #A26769;
 }
 
 .centrage { /* Utilisation : contraindre les contenus dans une colonne à l'intérieur des sections (en donnant cette classe à des éléments div intermédiaires) */
@@ -107,30 +107,30 @@ section {
 }
 
 .couleurs-alt {
-    color:var(--couleur2);
-    background-color:var(--couleur4);
+    color:#ECE2D0;
+    background-color:#A26769;
 }
 
 .couleurs-alt h2 {
-    color:var(--couleur1);
+    color:#BFB5AF;
 }
 
 section a {
-    color:var(--couleur1);
+    color:#BFB5AF;
     font-weight:400;
 }
 
 h2 {
     font-weight:300;
     font-size:40px;
-    color:var(--couleur5);
+    color:#582C4D;
     margin-top:0;
 }
 
 footer {
-    background-color:var(--couleur5);
+    background-color:#582C4D;
     font-size:12px;
-    color:var(--couleur2);
+    color:#ECE2D0;
     padding:40px;
 }
 
@@ -148,7 +148,7 @@ ul.big li{
 }
 
 ul.big li:hover {
-    color:var(--couleur1);
+    color:#BFB5AF;
     padding-left:10px;
 }
 
