@@ -1,5 +1,6 @@
 # Mon premier site web
 Premiers essais en HTML et CSS
+(version avec variables CSS)
 
 MàJ 15/10/2024
 
