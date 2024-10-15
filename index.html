@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+<!-- l'attribut lang : devrait refléter la langue dans laquelle sont principalement rédigés les contenus de la page -->
 
 <head>
     <meta charset="UTF-8">
@@ -19,24 +20,35 @@
 
 <body>
 
-    <header>
+    <header><!-- header est une balise sémantique (destinée à donner du sens à cette partie de la structure HTML). Son comportement visuel par défaut sera identique à un élément div (donc un simple bloc) ; la différence est qu'ici on indique clairement que c'est une en-tête, en l'occurrence celle de la page en elle-même puisqu'on est directement dans l'élément body. -->
+
         <h1>(Re)découverte :<br>HTML et CSS</h1>
-        <nav>
-            <ul>
-                <li><a class="actuel" href="#">Accueil</a></li>
+        <!-- Balise h1 : titre de premier niveau (le plus haut). La règle est que sur une page, on ne met en place qu'un seul titre h1. Pour les niveaux de titres suivants, on est libres (mais en faisant attention à rester cohérents dans les niveaux). -->
+
+        <nav><!-- balise sémantique - navigation -->
+
+            <ul><!-- balise sémantique - liste non ordonnée 
+                qui apportera en même temps des changements visuels (que l'on peut annuler via CSS s'ils ne nous conviennent pas)-->
+
+                <li><!-- balise sémantique - élément de liste -->
+                    <a class="actuel" href="#">Accueil</a>
+                </li>
+
                 <li><a href="projets.html">Projets</a></li>
                 <li><a href="ressources.html">Ressources</a></li>
+
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main><!-- balise sémantique - contenu principal -->
 
-        <section>
+        <section><!-- balise sémantique - section (ici de notre contenu principal) -->
 
-            <div class="centrage">
+            <div class="centrage"><!-- div (division) : balise NON sémantique très répandue. Pourra être utilisée dès que la structure doit être... divisée pour gérer un aspect visuel (comme ici via la classe "centrage" qui s'accompagne de règles CSS). -->
 
                 <h2>Changement de mise en page !</h2>
+                <!-- Balise h2 : titre de niveau 2. On peut en placer plusieurs sur une page. Ici on part du principe que ce titre concerne la section dans laquelle on se trouve. S'il y avait besoin de subdiviser la section et d'en titrer les différentes parties, on pourrait utiliser des balises h3. -->
 
                 <p>Eh oui, on constate maintenant un semblant de thème visuel, avec notamment une palette de couleurs
                     élégante, générée par <a href="https://coolors.co" target="_blank"
@@ -87,7 +99,7 @@
 
     </main>
 
-    <footer>
+    <footer><!-- balise sémantique - pied de page -->
 
             <p>Ceci est un pied de page</p>
 
