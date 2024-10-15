@@ -1,17 +1,14 @@
-/*** NOUVEAU - Une gestion plus flexible des couleurs : */
+/*
 
-/* Palette : https://coolors.co/bfb5af-ece2d0-d5b9b2-a26769-582c4d */
+MEMO - Palette (https://coolors.co/bfb5af-ece2d0-d5b9b2-a26769-582c4d) :
 
-:root {
-    /* Déclaration de variables... */
-    --couleur1: #BFB5AF; /* Silver */
-    --couleur2: #ECE2D0; /* Bone */
-    --couleur3: #D5B9B2; /* Pale dogwood */
-    --couleur4: #A26769; /* Rose taupe */
-    --couleur5: #582C4D; /* Violet */
-    /* ...qui seront utilisées dans la suite du code CSS.
-    L'intérêt : comme chacune de ces couleurs est utilisée plusieurs fois, si on veut en remplacer une (partout où elle est utilisée) en une seule manipulation, il suffira de changer ici la valeur de sa variable ! */
-}
+Silver #BFB5AF
+Bone #ECE2D0
+Pale dogwood #D5B9B2
+Rose taupe #A26769
+Violet #582C4D
+
+*/
 
 /************************/
 
