@@ -1,21 +1,26 @@
-/*
+/*** NOUVEAU - Une gestion plus flexible des couleurs : */
 
-MEMO - Palette (https://coolors.co/bfb5af-ece2d0-d5b9b2-a26769-582c4d) :
+/* Palette : https://coolors.co/bfb5af-ece2d0-d5b9b2-a26769-582c4d */
 
-Silver #BFB5AF
-Bone #ECE2D0
-Pale dogwood #D5B9B2
-Rose taupe #A26769
-Violet #582C4D
+:root {
+    /* Déclaration de variables... */
+    --couleur1: #BFB5AF; /* Silver */
+    --couleur2: #ECE2D0; /* Bone */
+    --couleur3: #D5B9B2; /* Pale dogwood */
+    --couleur4: #A26769; /* Rose taupe */
+    --couleur5: #582C4D; /* Violet */
+    /* ...qui seront utilisées dans la suite du code CSS.
+    L'intérêt : comme chacune de ces couleurs est utilisée plusieurs fois, si on veut en remplacer une (partout où elle est utilisée) en une seule manipulation, il suffira de changer ici la valeur de sa variable ! */
+}
 
-*/
+/************************/
 
 body {
     margin:0; /* Remise à zero des marges données par le navigateur (utile pour obtenir une réelle pleine largeur, comme ici le header qui pourra être collé aux bords de la fenêtre */
     font-family: "Roboto", sans-serif; /* Possible grâce aux liens vers Google Fonts */
     font-weight: 300;
-    background-color:#ECE2D0;
-    color:#A26769;
+    background-color:var(--couleur2);
+    color:var(--couleur4);
     font-size:18px;
 }
 
@@ -30,7 +35,7 @@ header {
     justify-content:flex-end; /* Sur l'axe principal on accumule tout à la fin (donc en bas) */
     align-items:center; /* Sur l'axe secondaire on centre tout */
 
-    background-color:#582C4D;
+    background-color:var(--couleur5);
 
     background-image:url(images/image-code.jpg);
     background-size:cover; /* L'image de fond couvrira en une fois tout le header (au lieu de devoir se répéter si plus petite) et sa taille d'affichage sera ajustée au mieux (au lieu de trop être tronquée si plus grande)*/
@@ -47,7 +52,7 @@ header nav { /* Tout élément nav se trouvant dans un élément header */
 
 h1 {
     margin-top:0;
-    color:#ECE2D0;
+    color:var(--couleur2);
 
     font-size:9vw;
     font-weight: 100;
@@ -65,7 +70,7 @@ nav ul {
 }
 
 nav a {
-    color:#ECE2D0;
+    color:var(--couleur2);
     font-size:20px;
     text-decoration:none;
     letter-spacing:0.75px;
@@ -77,7 +82,7 @@ nav a:not(.actuel):hover {
 - :not(.actuel) : mais à condition que cet élément a ne porte pas la classe "actuel"
 - :hover : et à n'appliquer que lorsque cet élément a est survolé par la souris
 */
-    color:#A26769;
+    color:var(--couleur4);
     font-weight:500;
 }
 
@@ -92,7 +97,7 @@ section {
     padding-right:40px;
     padding-top:100px;
     padding-bottom:100px;
-    border-bottom:1px dotted #A26769;
+    border-bottom:1px dotted var(--couleur4);
 }
 
 .centrage { /* Utilisation : contraindre les contenus dans une colonne à l'intérieur des sections (en donnant cette classe à des éléments div intermédiaires) */
@@ -105,30 +110,30 @@ section {
 }
 
 .couleurs-alt {
-    color:#ECE2D0;
-    background-color:#A26769;
+    color:var(--couleur2);
+    background-color:var(--couleur4);
 }
 
 .couleurs-alt h2 {
-    color:#BFB5AF;
+    color:var(--couleur1);
 }
 
 section a {
-    color:#BFB5AF;
+    color:var(--couleur1);
     font-weight:400;
 }
 
 h2 {
     font-weight:300;
     font-size:40px;
-    color:#582C4D;
+    color:var(--couleur5);
     margin-top:0;
 }
 
 footer {
-    background-color:#582C4D;
+    background-color:var(--couleur5);
     font-size:12px;
-    color:#ECE2D0;
+    color:var(--couleur2);
     padding:40px;
 }
 
@@ -146,7 +151,7 @@ ul.big li{
 }
 
 ul.big li:hover {
-    color:#BFB5AF;
+    color:var(--couleur1);
     padding-left:10px;
 }
 
