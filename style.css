@@ -4,11 +4,11 @@
 
 :root {
     /* Déclaration de variables... */
-    --couleur1: #BFB5AF; /* Silver */
-    --couleur2: #ECE2D0; /* Bone */
-    --couleur3: #D5B9B2; /* Pale dogwood */
-    --couleur4: #A26769; /* Rose taupe */
-    --couleur5: #582C4D; /* Violet */
+    --couleur1: #FB3640;
+    --couleur2: #605F5E;
+    --couleur3: #1D3461;
+    --couleur4: #1F487E;
+    --couleur5: #247BA0;
     /* ...qui seront utilisées dans la suite du code CSS.
     L'intérêt : comme chacune de ces couleurs est utilisée plusieurs fois, si on veut en remplacer une (partout où elle est utilisée) en une seule manipulation, il suffira de changer ici la valeur de sa variable ! */
 }
